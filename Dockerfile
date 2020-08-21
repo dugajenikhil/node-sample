@@ -12,4 +12,4 @@ RUN npm install
 ENV HOST 0.0.0.0
 EXPOSE 80
 
-CMD [ "node app.js" ]
+CMD [ "npm", "run", "start" ]

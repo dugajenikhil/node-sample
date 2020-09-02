@@ -7,7 +7,22 @@ app.get('/', function (req, res) {
     fruit: "Apple",
     size: "Large",
     color: "Red"
-  }
+  })
+  console.log('log: ', {
+    fruit: "Orange",
+    size: "Large",
+    color: "Orange"
+  })
+  console.log('log: ', {
+    fruit: "Cherry",
+    size: "Medium",
+    color: "Red"
+  })
+  console.log('log: ', {
+    fruit: "Berries",
+    size: "Small",
+    color: "Blue"
+  })
   res.send('Hello World from ' + process.env.USER + ' Application deployed on ECS');
 });
 app.listen(80, function () {

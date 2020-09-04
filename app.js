@@ -31,7 +31,7 @@ app.get('/stringify', function (req, res) {
     remarks: "app: /getUser: Completed /getUser API",
     createdAt: "2020-09-04T07:50:03.778Z"
   }
-  console.log(json1)
+  console.log(JSON.stringify(json1))
   res.send(json1);
 });
 
@@ -61,7 +61,7 @@ app.get('/wstringify', function (req, res) {
     remarks: "app: /getUser: Completed /getUser API",
     createdAt: "2020-09-04T07:50:03.778Z"
   }
-  console.log(json1)
+  console.log(JSON.stringify(json1))
   res.send(json1);
 });
 

@@ -1,9 +1,16 @@
 var express = require('express');
 var dotenv = require('dotenv').config();
 var app = express();
+
 app.get('/', function (req, res) {
-  res.send('App Running');
+  let ip = null;
+  require('dns').lookup(require('os').hostname(), function (err, add, fam) {
+    console.log('addr: '+add);
+    ip = add
+    res.send('<h1>App Running... IP Address: '+ip+'</h1>');
+  })
 })
+
 app.get('/stringify', function (req, res) {
   try {
     if(req.query.err) throw new Error('custom error message')

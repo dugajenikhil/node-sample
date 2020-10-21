@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
   require('dns').lookup(require('os').hostname(), function (err, add, fam) {
     console.log('addr: '+add);
     ip = add
-    res.send('<h1>Application Running... IP Address: '+ip+'</h1>');
+    res.send('<h1>Application is Running... IP Address: '+ip+'</h1>');
   })
 })
 

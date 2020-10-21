@@ -4,7 +4,7 @@
 		"taskDefinitionArn": "arn:aws:ecs:ap-south-1:332756726186:task-definition/sample-definition:1",
 		"containerDefinitions": [{
 			"name": "flask-signup",
-			"image": "your-repository/flask-signup:v_0",
+			"image": "https://332756726186.dkr.ecr.ap-south-1.amazonaws.com/flask-signup:v_0",
 			"cpu": 1,
 			"portMappings": [{
 				"containerPort": 80,
